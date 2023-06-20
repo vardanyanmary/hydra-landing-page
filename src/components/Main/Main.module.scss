@@ -1,0 +1,88 @@
+.Main {
+    font-family: var(--font-family-main);
+}
+
+.article {
+    min-width: 1024px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    font-family: 'Montserrat';
+}
+
+.img {
+    width: 490px;
+    height: 426px;
+    filter: var(--drop-shadow);
+    border-radius: var(--border-radius);
+}
+
+.rect {
+    width: 524px;
+    height: 455px;
+}
+
+.sections {
+    width: 460px;
+    height: 72px;
+    font-style: normal;
+    font-weight: var(--font-weight-s);
+    font-size: var(--font-size-l);
+    line-height: 20px;
+    color: var(--color-linear-white);
+}
+
+.btnArr {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 66px;
+}
+
+.arrow {
+    width: 65px;
+    height: 55px;
+}
+
+.dive {
+    font-weight: var(--font-weight-l);
+    font-size: 40px;
+    line-height: 56px;
+
+    .span {
+        background: var(--text-color-gradient);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+    }
+}
+
+.PGC {
+    display: flex;
+    justify-content: space-around;
+}
+
+.payGive {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    .Texts {
+        margin-left: 5px;
+        color: var(--color-linear-white);
+    }
+
+    .TextsP1 {
+        font-weight: var(--font-weight-l);
+        font-size: var(--font-size-xl);
+        margin: 0;
+    }
+
+    .TextsP2 {
+        font-weight: var(--font-weight-s);
+        font-size: var(--font-size-s);
+        margin: 0;
+    }
+}

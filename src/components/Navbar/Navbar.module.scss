@@ -1,0 +1,25 @@
+.Navbar {
+    padding: 5px 10px;
+    margin: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    font-family: var(--font-family-main);
+    font-size: var(--font-size-s);
+    font-weight: var(--font-weight-m);
+    text-align: center;
+    
+    a {
+        color: var(--color-linear-white);
+        text-shadow: var(--text-shadow);
+        text-decoration: none;
+        margin-left: 37px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .Navbar{
+        display: none;
+    }
+}

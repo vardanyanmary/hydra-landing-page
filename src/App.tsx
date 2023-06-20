@@ -1,14 +1,12 @@
-import Button from "./shared/ui/Button/Button";
+import Header from "./components/Header/Header";
+import Main from "./components/Main/Main";
 
 const App = () => {
   return (
     <div>
-      <Button state="Secondary" type="button">
-        CONTACT US
-      </Button>
-      <Button state="Primary" type="button">
-        JOIN HYDRA
-      </Button>
+      <Header/>
+      <Main/>
+      {/* <Footer/> */}
     </div>
   );
 };
