@@ -25,12 +25,13 @@
 
   --button-bg-gradient : linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%) ; 
   --text-color-gradient: linear-gradient(91.57deg, #C0B7E8 -1.02%, #8176AF 36.25%);
-
+  --bg-radial-gradient : radial-gradient(50% 2900.76% at 50% 53.89%, rgba(58, 52, 86, 0.95) 0%, #211E2E 100%);
 
   //? ============== SHADOW ==============
 
   --drop-shadow: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   --text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+  --bg-shadow: 0px 4px 4px rgba(192, 183, 232, 0.01);
 
   //? ============== BORDER RADIUS ==============
 

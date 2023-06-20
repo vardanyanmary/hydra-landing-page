@@ -1,6 +1,4 @@
 .Navbar {
-    padding: 5px 10px;
-    margin: 5px;
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
@@ -13,7 +11,7 @@
         color: var(--color-linear-white);
         text-shadow: var(--text-shadow);
         text-decoration: none;
-        margin-left: 37px;
+        margin-left: 10px;
     }
 }
 

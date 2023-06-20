@@ -1,6 +1,5 @@
 .Header {
-    width: 85%;
-    margin: 10px;
+    max-width: 1272px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -14,7 +13,6 @@
     align-items: center;
 }
 
-/* Media query for iPad devices */
 @media (min-width: 481px) and (max-width: 1024px) {
     .icons {
         flex-direction: column;
