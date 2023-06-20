@@ -1,0 +1,27 @@
+body {
+    background-color: #302C42;
+}
+
+button {
+    font-family: "Montserrat";
+    width: 154px;
+    height: 48px;
+    filter: var(--drop-shadow);
+    border-radius: 40px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 12px;
+    margin-left: 38px;
+}
+
+.Button--Primary {
+    background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
+    border: none;
+    color: var(--color-linear-darker);
+}
+
+.Button--Secondary {
+    border: 2px solid var(--color-linear-white);
+    background: none;
+    color: var(--color-linear-white);
+}
