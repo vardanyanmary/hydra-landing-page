@@ -1,0 +1,24 @@
+.footer{
+    max-width: 1272px;
+    margin: 0 auto;
+    font-family: var(--font-family-main);
+}
+
+.footerArticle{
+    margin-top: 25px;
+    width: 100%;
+}
+
+.lines{
+    width: 95% ;
+    height: 1px ;
+    background-color: rgba(192, 183, 232, 0.33);
+    margin-left: 25px;
+}
+
+.footerP{
+    text-align: center;
+    font-weight: var(--font-weight-m);
+    font-size: var(--font-size-m);
+    color: var(--color-linear-white);
+}

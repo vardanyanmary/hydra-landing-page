@@ -4,6 +4,8 @@ import rectangle from "../../shared/assets/Rectangle 4.svg";
 import Button from "../../shared/ui/Button/Button";
 import arrow from "../../shared/assets/arrow-small-right.png";
 import { contactData } from "../../shared/constants/contactData";
+import Section from "../Section/Section";
+import { sectionsData1, sectionsData2 } from "../../shared/constants/sectionData";
 
 const Main = () => {
   return (
@@ -44,10 +46,14 @@ const Main = () => {
               <p className={cls.TextsP1}>{data.title}</p>
               <p className={cls.TextsP2}>{data.description}</p>
             </div>
-            {index !== contactData.length - 1 && <div className={cls.lines}></div>}
+            {index !== contactData.length-1 && <div className={cls.lines}></div>}
           </section>
         ))}
       </article>
+
+      <Section data={sectionsData1}/>
+      
+      <Section data={sectionsData2}/>
     </main>
   );
 };

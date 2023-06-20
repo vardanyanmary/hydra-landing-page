@@ -1,0 +1,38 @@
+.section{
+    max-width: 1272px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--color-linear-white);
+    margin-top: 10px;
+}
+
+.sectionText{
+    width: 100%;
+    display: flex;
+}
+
+.sectionContent{
+    width: 100%;
+    font-size: var(--font-size-l);
+    font-weight: var(--font-weight-s);
+    line-height: 20px;
+}
+
+.sectionTitle{
+    margin: 0;
+    font-weight: var(--font-weight-l);
+    font-size: var(--font-size-xxl);
+    line-height: 44px;
+}
+
+.sectionSubtitle{
+    margin: 0;
+    font-weight: var(--font-weight-xs);
+    font-size: var(--font-size-xxl);
+}
+
+img{
+    margin-left: 5px;
+}
