@@ -1,7 +1,6 @@
 import React from "react";
 import cls from "./Section.module.scss";
 import longArrow from "../../shared/assets/Component 2.svg";
-
 interface SectionProps {
   data: {
     title: string;
