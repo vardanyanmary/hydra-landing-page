@@ -1,17 +1,17 @@
-export const sectionsData1 = {
+export const INTRODUCTION_DATA = {
   title: "INTRODUCTION",
   subtitle: "TO HYDRA VR",
   content:
     "Vitae sapien pellentesque habitant morbi tristique senectus et netus et. Feugiat nibh sed pulvinar proin gravida hendrerit lectus. Mi sit amet mauris commodo quis imperdiet massa tincidunt nunc. Viverra aliquet eget sit amet tellus. Ornare lectus sit amet est placerat in. Lectus magna fringilla urna porttitor rhoncus vitae.",
 };
-export const sectionsData2 = {
+export const WHY_BUILD_DATA = {
   title: "WHY BUILD",
   subtitle: "WITH HYDRA ?",
   content:
     "Vitae sapien pellentesque habitant morbi tristique senectus et netus et. Feugiat nibh sed pulvinar proin gravida hendrerit lectus. Mi sit amet mauris commodo quis imperdiet massa tincidunt nunc. Viverra aliquet eget sit amet tellus. Ornare lectus sit amet est placerat in. Lectus magna fringilla urna porttitor rhoncus vitae.",
 };
 
-export const sectionsData3 = {
+export const HOW_BUILD_DATA = {
   title: "HOW BUILD",
   subtitle: "WITH HYDRA VR?",
   content:

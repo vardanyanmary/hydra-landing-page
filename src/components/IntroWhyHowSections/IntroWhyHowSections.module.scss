@@ -1,4 +1,4 @@
-.section{
+.introWhyHowSections{
     max-width: 1272px;
     margin: 0 auto;
     display: flex;
@@ -8,26 +8,26 @@
     margin-top: 10px;
 }
 
-.sectionText{
+.divText{
     width: 100%;
     display: flex;
 }
 
-.sectionContent{
+.pContent{
     width: 100%;
     font-size: var(--font-size-l);
     font-weight: var(--font-weight-s);
     line-height: 20px;
 }
 
-.sectionTitle{
+.pTitle{
     margin: 0;
     font-weight: var(--font-weight-l);
     font-size: var(--font-size-xxl);
     line-height: 44px;
 }
 
-.sectionSubtitle{
+.pSubtitle{
     margin: 0;
     font-weight: var(--font-weight-xs);
     font-size: var(--font-size-xxl);

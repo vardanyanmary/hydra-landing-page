@@ -1,7 +1,11 @@
-.Navbar {
+@mixin flexCenter {
     display: flex;
     justify-content: space-evenly;
-    flex-direction: row;
+    align-items: center;
+}
+
+.Navbar {
+    @include flexCenter;
     font-family: var(--font-family-main);
     font-size: var(--font-size-s);
     font-weight: var(--font-weight-m);

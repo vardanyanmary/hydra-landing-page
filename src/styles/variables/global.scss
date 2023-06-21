@@ -1,15 +1,16 @@
+
 :root {
   --font-family-main:"Montserrat";
   
   //? ============== FONT WEIGHT ==============
-
+  
   --font-weight-l: 800;
   --font-weight-m: 700;
   --font-weight-s: 400;
   --font-weight-xs: 300;
-
+  
   //? ============== FONT SIZE ==============
-
+  
   --font-size-s: 12px;
   --font-size-m: 14px;
   --font-size-l: 16px;
@@ -17,28 +18,29 @@
   --font-size-xxl: 36px;
 
   //? ============== LINEAR COLORS ==============
-
+  
   --color-linear-white: white;
   --color-linear-light: #C0B7E8;
   --color-linear-dark:#c0b7e854;
   --color-linear-darker: #302C42;
   --color-linear-darkest: #000; 
-
+  
   
   //? ============== LINEAR GRADIENT COLORS ==============
-
+  
   --button-bg-gradient : linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%) ; 
   --text-color-gradient: linear-gradient(91.57deg, #C0B7E8 -1.02%, #8176AF 36.25%);
   --bg-radial-gradient : radial-gradient(50% 2900.76% at 50% 53.89%, rgba(58, 52, 86, 0.95) 0%, #211E2E 100%);
-
+  
   //? ============== SHADOW ==============
-
+  
   --drop-shadow: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   --text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
   --bg-shadow: 0px 4px 4px rgba(192, 183, 232, 0.01);
-
+  
   //? ============== BORDER RADIUS ==============
-
+  
   --border-radius: 100px 100px 100px 240px;
   --border-radius-shvets: 100px 240px;
+
 }
