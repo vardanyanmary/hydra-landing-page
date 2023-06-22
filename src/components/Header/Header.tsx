@@ -7,14 +7,14 @@ import cls from "./Header.module.scss";
 const Header = () => {
   return (
     <header className={cls.Header}>
-      <section className={cls.icons}>
+      <section className={cls.headerSection}>
         <Frame />
         <Group />
       </section>
-      <section className={cls.icons}>
+      <section className={cls.headerSection}>
         <Navbar />
       </section>
-      <section className={cls.icons}>
+      <section className={cls.headerSection}>
         <div className={cls.buttons}>
           <Button state="Secondary" type="button">
             CONTACT US
