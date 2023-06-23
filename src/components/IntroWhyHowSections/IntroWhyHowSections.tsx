@@ -10,7 +10,7 @@ interface SectionProps {
   };
 }
 
-const IntroWhyHowSections: React.FC<SectionProps> = ({ data: { title, subtitle, content } }) => {
+const IntroWhyHowSections: React.FC<SectionProps> = ({data: { title, subtitle, content }}) => {
   return (
     <section className={cls.introWhyHowSections}>
       <div className={cls.divText}>

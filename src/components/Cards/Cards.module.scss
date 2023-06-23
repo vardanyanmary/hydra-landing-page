@@ -1,4 +1,48 @@
-.cardsSection{
+@mixin justifyCenter{
     display: flex;
-    
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.cardsSection{
+    max-width: 1272px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: var(--font-weight-m);
+    margin-top: 25px;
+}
+
+.cardsDiv{
+    width: 100%;
+    margin-left: 5px;
+    border-radius: var(--border-radius-radial);
+    background:var(--bg-radial-gradient );
+    padding: 15px 0;
+}
+
+.img{
+    width: 80%;
+    @include justifyCenter;
+    border-radius: var(--border-radius-div);
+}
+
+.cardsTitle{
+    width: 100%;
+    text-align: center;
+    color: var(--color-linear-white);
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-m);
+}
+
+.cardsDescription{
+    width: 90%;
+    padding: 0 10px;
+    color: var(--color-linear-white);
+    font-size: var(--font-size-s);
+    font-weight: var(--font-weight-s);
+}
+
+.btnTry{
+    @include justifyCenter;
 }

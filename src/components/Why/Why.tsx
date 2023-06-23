@@ -5,10 +5,10 @@ import cls from "./Why.module.scss";
 
 const Why = () => {
   return (
-    <article>
+    <section className={cls.why}>
       <IntroWhyHowSections data={WHY_BUILD_DATA} />
       <Cards />
-    </article>
+    </section>
   );
 };
 

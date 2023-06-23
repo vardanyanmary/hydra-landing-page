@@ -12,9 +12,10 @@ const Footer = () => {
   return (
     <footer className={cls.footer}>
       <article className={cls.footerArticle}>
-        
         <Frame className={cls.footerSection} />
-        
+
+        <div className={cls.linesColumns}></div>
+
         <section className={cls.footerSection}>
           <nav className={cls.Navbar}>
             <a href="">ABOUT</a>
@@ -25,6 +26,8 @@ const Footer = () => {
           </nav>
         </section>
 
+        <div className={cls.linesColumns}></div>
+
         <section className={cls.footerSection}>
           <nav className={cls.Navbar}>
             <a href="">F.A.Q</a>
@@ -34,21 +37,22 @@ const Footer = () => {
           </nav>
         </section>
 
-        <section className={cls.footerSection}>
-            <p className={cls.footerP}>SOCIALIZE WITH HYDRA</p>
-            <div className={cls.footerDiv}>
-                <Facebook className={cls.icons}/>
-                <Twitter className={cls.icons}/>
-                <Linkedin className={cls.icons}/>
-                <YouTube className={cls.icons}/>
-                <Instagram className={cls.icons}/>
-                <Pinterest className={cls.icons}/>
-            </div>
-            <Button state="Primary" type="button">
-                BUILD YOUR WORLD
-            </Button>
-        </section>
+        <div className={cls.linesColumns}></div>
 
+        <section className={cls.footerSection}>
+          <p className={cls.footerP}>SOCIALIZE WITH HYDRA</p>
+          <div className={cls.footerDiv}>
+            <Facebook className={cls.icons} />
+            <Twitter className={cls.icons} />
+            <Linkedin className={cls.icons} />
+            <YouTube className={cls.icons} />
+            <Instagram className={cls.icons} />
+            <Pinterest className={cls.icons} />
+          </div>
+          <Button state="Primary" type="button">
+            BUILD YOUR WORLD
+          </Button>
+        </section>
       </article>
 
       <div className={cls.lines}></div>

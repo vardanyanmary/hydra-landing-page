@@ -1,0 +1,57 @@
+.technologiesArticle {
+    max-width: 1272px;
+    margin-top: 25px;
+}
+
+.technologiesSection {
+    border-radius: 160px;
+    width: 100%;
+    position: relative;
+}
+
+.technologiesImg {
+    width: 100%;
+    border-radius: var(--border-radius-img);
+}
+
+.technologiesText {
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: var(--color-linear-white);
+    word-break: break-word;
+}
+
+.technologiesTitle {
+    box-sizing: content-box;
+    font-size: var(--font-size-xxl);
+    font-weight: var(--font-weight-m)
+}
+
+.technologiesSubtitle {
+    width: 100%;
+    font-size: var(--font-size-xxl);
+    font-weight: var(--font-weight-xs)
+}
+
+.arrowImg {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    border-radius: var(--border-radius-img-arrow);
+    background: var(--bg-linear-gradient);
+}
+
+.hydraTechsSection{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hydraTechImgs{
+    width: 25%;
+    margin-left: 5px;
+}
