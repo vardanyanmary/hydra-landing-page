@@ -1,5 +1,5 @@
 .footer {
-    max-width: 1272px;
+    max-width: 1278px;
     margin: 0 auto;
     font-family: var(--font-family-main);
 }
@@ -47,8 +47,14 @@
     width: 100%;
 }
 
-.linesColumns{
-    width: 2px;
-    height: 100% ;
-    background: var(--text-color-gradient);
+.footerDiv{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.footerBtn{
+    margin: 0 auto;
+    margin-top: 5%;
 }

@@ -1,0 +1,55 @@
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.JoinArticle {
+    max-width: 1278px;
+    @include flexCenter;
+    flex-direction: column;
+    background: var(--join-bg-color-gradient);
+    border-radius: var(--border-radius-join);
+    padding: 10px;
+}
+
+.joinSection {
+    width: 100%;
+    text-align: center;
+    color: var(--color-linear-white);
+}
+
+.joinTitle {
+    font-size: var(--font-size-xxl);
+    font-weight: var(--font-weight-m);
+}
+
+.joinSubtitle {
+    font-size: var(--font-size-xxl);
+    font-weight: var(--font-weight-s);
+}
+
+.lines {
+    width: 35%;
+    height: 1px;
+    background-color: var(--color-linear-dark);
+    margin-left: 25px;
+    margin-top: 15px;
+    margin: 0 auto
+}
+
+.firstLastName{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.joinInput{
+    width: 100%;
+}
+
+.joinBtn {
+    @include flexCenter;
+    margin-top: 10px;
+}

@@ -1,0 +1,40 @@
+@mixin flexCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Steps {
+    max-width: 1278px;
+    @include flexCenter;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 27px;
+}
+
+.stepsDiv {
+    width: 100%;
+    @include flexCenter;
+}
+
+.stepsDivMap{
+    width: 25%;
+}
+
+.stepsNumber {
+    width: 20%;
+    padding: 40px 30px;
+    @include flexCenter;
+    margin: 0 auto;
+    font-size: var(--font-size-3xl);
+    font-weight: var(--font-weight-m);
+    background: var(--bg-number-linear-gradient);
+    border-radius: var(--border-radius-img);
+}
+
+.stepsP {
+    width: 100%;
+    @include flexCenter;
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-m);
+    color: var(--color-linear-white);
+}

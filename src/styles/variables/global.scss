@@ -16,6 +16,8 @@
   --font-size-l: 16px;
   --font-size-xl: 24px;
   --font-size-xxl: 36px;
+  --font-size-3xl: 36px;
+  
 
   //? ============== LINEAR COLORS ==============
   
@@ -32,7 +34,10 @@
   --text-color-gradient: linear-gradient(91.57deg, #C0B7E8 -1.02%, #8176AF 36.25%);
   --bg-radial-gradient : radial-gradient(50% 2900.76% at 50% 53.89%, rgba(58, 52, 86, 0.95) 0%, #211E2E 100%);
   --bg-linear-gradient : linear-gradient(268deg, #C0B7E8 0%, #8176AF 100%);
-  
+  --bg-number-linear-gradient : linear-gradient(251deg, #C0B7E8 0%, #8176AF 100%);
+  --join-bg-color-gradient:radial-gradient(50% 50.00% at 50% 50.00%, #403A5F 0%, #211E2E 100%);
+
+
   //? ============== SHADOW ==============
   
   --drop-shadow: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -47,4 +52,6 @@
   --border-radius-div: 180px;
   --border-radius-img: 160px ;
   --border-radius-img-arrow: 70px ;
+  --border-radius-join:100px
+  
 }

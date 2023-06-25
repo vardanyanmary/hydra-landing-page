@@ -1,12 +1,12 @@
 import cls from "./Footer.module.scss";
 import { ReactComponent as Frame } from "../../shared/assets/Frame.svg";
-import { ReactComponent as Facebook } from "../../shared/assets/facebook.svg";
-import { ReactComponent as Pinterest } from "../../shared/assets/pinterest.svg";
-import { ReactComponent as Twitter } from "../../shared/assets/twitter.svg";
-import { ReactComponent as Linkedin } from "../../shared/assets/linkedin.svg";
-import { ReactComponent as Instagram } from "../../shared/assets/instagram.svg";
-import { ReactComponent as YouTube } from "../../shared/assets/youtube.svg";
+import { ReactComponent as Vector } from "../../shared/assets/Vector 21.svg";
 import Button from "../../shared/ui/Button/Button";
+import {
+  FOOTER_ICONS,
+  FOOTER_INFO_COLUMN,
+  FOOTER_NAVBAR_ITEMS,
+} from "../../constants/footer";
 
 const Footer = () => {
   return (
@@ -14,48 +14,47 @@ const Footer = () => {
       <article className={cls.footerArticle}>
         <Frame className={cls.footerSection} />
 
-        <div className={cls.linesColumns}></div>
+        <Vector />
 
         <section className={cls.footerSection}>
           <nav className={cls.Navbar}>
-            <a href="">ABOUT</a>
-            <a href="">SERVICES</a>
-            <a href="">TECHNOLOGIES</a>
-            <a href="">HOW TO</a>
-            <a href="">JOIN HYDRA</a>
+            {FOOTER_NAVBAR_ITEMS.map((item, index) => (
+              <a key={index} href="">
+                {item}
+              </a>
+            ))}
           </nav>
         </section>
 
-        <div className={cls.linesColumns}></div>
+        <Vector />
 
         <section className={cls.footerSection}>
           <nav className={cls.Navbar}>
-            <a href="">F.A.Q</a>
-            <a href="">SITEMAP</a>
-            <a href="">CONDITIONS</a>
-            <a href="">LICENCES</a>
+            {FOOTER_INFO_COLUMN.map((item, index) => (
+              <a key={index} href="">
+                {item}
+              </a>
+            ))}
           </nav>
         </section>
 
-        <div className={cls.linesColumns}></div>
+        <Vector />
 
         <section className={cls.footerSection}>
           <p className={cls.footerP}>SOCIALIZE WITH HYDRA</p>
           <div className={cls.footerDiv}>
-            <Facebook className={cls.icons} />
-            <Twitter className={cls.icons} />
-            <Linkedin className={cls.icons} />
-            <YouTube className={cls.icons} />
-            <Instagram className={cls.icons} />
-            <Pinterest className={cls.icons} />
+            {FOOTER_ICONS.map(({ component: IconComponent, key }) => (
+              <IconComponent className={cls.icons} key={key} />
+            ))}
           </div>
-          <Button state="Primary" type="button">
+          <Button state="Primary" type="button" className={cls.footerBtn}>
             BUILD YOUR WORLD
           </Button>
         </section>
       </article>
 
       <div className={cls.lines}></div>
+
       <p className={cls.footerP}>
         2023 © HYDRA LANDING PAGE - BY ZINE. E. FALOUTI - ALL RIGHTS RESERVED
       </p>

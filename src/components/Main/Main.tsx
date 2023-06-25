@@ -5,6 +5,8 @@ import Why from "../Why/Why";
 import PayGiveCall from "../PayGiveCall/PayGiveCall";
 import Technologies from "../Technologies/Technologies";
 import How from "../How/How";
+import Steps from "../Steps/Steps";
+import Join from "../Join/Join";
 
 const Main = () => {
   return (
@@ -13,8 +15,10 @@ const Main = () => {
       <PayGiveCall />
       <Introduction />
       <Why />
-      <Technologies/>
-      <How/>
+      <Technologies />
+      <How />
+      <Steps />
+      <Join />
     </main>
   );
 };

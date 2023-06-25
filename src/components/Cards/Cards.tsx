@@ -1,6 +1,5 @@
 import { CARDS_INFO } from "../../constants/cardsInfo";
 import Button from "../../shared/ui/Button/Button";
-
 import cls from "./Cards.module.scss";
 
 const Cards = () => {
