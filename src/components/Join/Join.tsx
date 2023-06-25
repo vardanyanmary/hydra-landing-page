@@ -1,41 +1,32 @@
 import Button from "../../shared/ui/Button/Button";
-import Input, { InputState } from "../../shared/ui/Input/Input";
 import cls from "./Join.module.scss";
 
 const Join = () => {
   return (
-    <article className={cls.JoinArticle}>
-      <section className={cls.joinSection}>
-        <p className={cls.joinTitle}>JOIN HYDRA</p>
-        <div className={cls.lines}></div>
-        <p className={cls.joinSubtitle}>Let's Build Your VR EXperience</p>
-      </section>
-      <section className={cls.joinSection}>
-        <div className={cls.firstLastName}>
-          <Input placeholder="First Name" className={cls.joinInput} />
-          <Input placeholder="Last Name" className={cls.joinInput} />
+    <div className={cls.wrapper}>
+      <div className={cls.constactUsContainer}>
+        <div className={cls.info}>
+          <h2>JOIN HYDRA</h2>
+          <div className={cls.line}></div>
+          <p>Let’s Build Your VR Experience</p>
         </div>
-        <div className={cls.firstLastName}>
-          <Input
-            placeholder="Email"
-            className={cls.input}
-            state={InputState.DEFAULT}
-          />
-          <Input
-            placeholder="Phone Number"
-            className={cls.input}
-            state={InputState.DEFAULT}
-          />
-        </div>
-        <Input placeholder="Subject" state={InputState.DEFAULT} />
-        <Input placeholder="Tell us something" state={InputState.LONG} />
-      </section>
-      <section className={cls.joinSection}>
+        <form className={cls.form}>
+          <input className={cls.input} placeholder="First Name" type="text" />
+          <input className={cls.input} placeholder="Last Name" type="text" />
+          <input className={cls.input} placeholder="Email" type="text" />
+          <input className={cls.input} placeholder="Phone Number" type="text" />
+          <input placeholder="Subject" className={cls.subject} type="text" />
+          <textarea
+            placeholder="Tell Us Something..."
+            className={cls.textarea}
+          ></textarea>
+        </form>
+
         <Button state="Primary" type="button" className={cls.joinBtn}>
           SEND TO HYDRA
         </Button>
-      </section>
-    </article>
+      </div>
+    </div>
   );
 };
 

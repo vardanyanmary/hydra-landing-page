@@ -1,31 +1,28 @@
 .technologiesArticle {
     max-width: 1278px;
-    margin-top: 25px;
+    margin-top: 40px;
 }
 
 .technologiesSection {
-    border-radius: 160px;
-    width: 100%;
-    position: relative;
-}
-
-.technologiesImg {
-    width: 100%;
     border-radius: var(--border-radius-img);
+    width: 100%;
+    height: 80%;
+    margin-top: 35px;
 }
 
 .technologiesText {
-    width: 90%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    height: 70%;
     text-align: center;
     color: var(--color-linear-white);
-    word-break: break-word;
+    background-image: url("../../shared/assets/pexels-rodnae-productions-80973321.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 30px;
+    border-radius: 160px;
 }
 
 .technologiesTitle {
+    width: 100%;
     box-sizing: content-box;
     font-size: var(--font-size-xxl);
     font-weight: var(--font-weight-m)
@@ -33,14 +30,15 @@
 
 .technologiesSubtitle {
     width: 100%;
+    margin-top: 0;
     font-size: var(--font-size-xxl);
     font-weight: var(--font-weight-xs)
 }
 
 .arrowImg {
-    position: absolute;
-    top: 90%;
-    left: 50%;
+    position: relative;
+    right: 0;
+    bottom: -55px;
     border-radius: var(--border-radius-img-arrow);
     background: var(--bg-linear-gradient);
 }
@@ -48,10 +46,11 @@
 .hydraTechsSection{
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .hydraTechImgs{
-    width: 25%;
-    margin-left: 5px;
+    width: 15%;
+    height: 15%;
+    margin-top: 25px;
 }

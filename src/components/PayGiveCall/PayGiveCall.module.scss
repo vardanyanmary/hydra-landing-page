@@ -22,17 +22,18 @@
 .PGC {
     height: 167px;
     @include flexCenter;
-    margin-top: 25px;
+    margin-top: 40px;
     background: var(--bg-radial-gradient);
     box-shadow: var(--bg-shadow);
     border-radius: 90px;
+    position: relative;
 }
 
 .lines {
     width: 1px;
     background-color: rgba(192, 183, 232, 0.33);
     height: 100px;
-    margin-left: 25px;
+    margin-left: 45px;
 }
 
 .payGive {
@@ -53,5 +54,11 @@
         font-weight: var(--font-weight-s);
         font-size: var(--font-size-s);
         margin: 0;
+    }
+}
+
+@media (min-width:480px) and (max-width:1024px){
+    .lines {
+        margin-left: 15px;
     }
 }

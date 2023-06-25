@@ -2,6 +2,8 @@ import cls from "./Footer.module.scss";
 import { ReactComponent as Frame } from "../../shared/assets/Frame.svg";
 import { ReactComponent as Vector } from "../../shared/assets/Vector 21.svg";
 import Button from "../../shared/ui/Button/Button";
+import footer_line_1 from "../../shared/assets/footer_bg_line_1.svg";
+import footer_line_2 from "../../shared/assets/footer_bg_line_2.svg";
 import {
   FOOTER_ICONS,
   FOOTER_INFO_COLUMN,
@@ -11,6 +13,8 @@ import {
 const Footer = () => {
   return (
     <footer className={cls.footer}>
+      <img src={footer_line_1} alt="first line" className={cls.bgLine1} />
+      <img src={footer_line_2} alt="second line" className={cls.bgLine2} />
       <article className={cls.footerArticle}>
         <Frame className={cls.footerSection} />
 

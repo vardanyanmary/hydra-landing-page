@@ -1,14 +1,15 @@
-@mixin flexCenter{
+@mixin flexCenter {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .Steps {
     max-width: 1278px;
     @include flexCenter;
     justify-content: space-between;
     margin: 0 auto;
-    margin-top: 27px;
+    margin-top: 35px;
 }
 
 .stepsDiv {
@@ -16,7 +17,7 @@
     @include flexCenter;
 }
 
-.stepsDivMap{
+.stepsDivMap {
     width: 25%;
 }
 
@@ -29,6 +30,11 @@
     font-weight: var(--font-weight-m);
     background: var(--bg-number-linear-gradient);
     border-radius: var(--border-radius-img);
+    position: relative;
+}
+
+.stepsDiv {
+    position: relative;
 }
 
 .stepsP {
@@ -37,4 +43,26 @@
     font-size: var(--font-size-xl);
     font-weight: var(--font-weight-m);
     color: var(--color-linear-white);
+    position: relative;
+}
+
+@media (min-width: 480px) and (max-width: 1024px) {
+    .stepsNumber {
+        width: 35%;
+        padding: 40px 30px;
+        @include flexCenter;
+        margin: 0 auto;
+        font-size: var(--font-size-3xl);
+        font-weight: var(--font-weight-m);
+        background: var(--bg-number-linear-gradient);
+        border-radius: var(--border-radius-img);
+        position: relative;
+    }
+}
+
+.line {
+    width: 85%;
+    height: 50%;
+    position: absolute;
+    top: 0;
 }

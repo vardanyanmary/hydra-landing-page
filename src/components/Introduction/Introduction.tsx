@@ -1,6 +1,8 @@
 import { INTRODUCTION_DATA } from "../../constants/IntroWhyHow";
 import IntroWhyHowSections from "../IntroWhyHowSections/IntroWhyHowSections";
 import shvets from "../../shared/assets/pexels-shvets-production-7562014 1.svg";
+import introduction_bg_line_1 from "../../shared/assets/introduction_bg_line_1.svg";
+import introduction_bg_line_2 from "../../shared/assets/introduction_bg_line_2.svg";
 import cls from "./Introduction.module.scss";
 import Button from "../../shared/ui/Button/Button";
 
@@ -8,7 +10,11 @@ const Introduction = () => {
   return (
     <article className={cls.article}>
       <IntroWhyHowSections data={INTRODUCTION_DATA} />
+
       <section className={cls.section}>
+        <img src={introduction_bg_line_1} alt="" className={cls.bgLine1}/>
+        <img src={introduction_bg_line_2} alt="" className={cls.bgLine2}/>
+
         <div className={cls.div}>
           <img src={shvets} alt="img" className={cls.img1} />
         </div>
