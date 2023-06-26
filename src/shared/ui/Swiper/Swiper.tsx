@@ -9,7 +9,7 @@ import 'swiper/css/pagination';
 
 import cls from "./Swiper.module.scss";
 
-SwiperCore.use([Navigation, Pagination]);
+SwiperCore.use([Navigation, Pagination]); 
 
 interface SwiperProps {
   data: any;
