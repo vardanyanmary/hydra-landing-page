@@ -1,4 +1,4 @@
-.introWhyHowSections{
+.introWhyHowSections {
     max-width: 1278px;
     margin: 0 auto;
     display: flex;
@@ -8,19 +8,19 @@
     margin-top: 10px;
 }
 
-.divText{
+.divText {
     width: 95%;
     display: flex;
 }
 
-.pContent{
+.pContent {
     width: 100%;
     font-size: var(--font-size-l);
     font-weight: var(--font-weight-s);
     line-height: 20px;
 }
 
-.pTitle{
+.pTitle {
     width: 100%;
     margin: 0;
     font-weight: var(--font-weight-l);
@@ -28,12 +28,34 @@
     line-height: 44px;
 }
 
-.pSubtitle{
+.pSubtitle {
     margin: 0;
     font-weight: var(--font-weight-xs);
     font-size: var(--font-size-xxl);
 }
 
-img{
+img {
     margin-left: 5px;
+}
+
+@media (max-width:768px) {
+    .arrow {
+        display: none;
+    }
+
+    .pContent {
+        display: none;
+    }
+
+    .divText {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .pTitle,
+    .pSubtitle {
+        text-align: center;
+        font-size: var(--font-size-xl);
+    }
 }

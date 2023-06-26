@@ -1,5 +1,5 @@
 import React, { ErrorInfo, ReactNode} from 'react';
-
+import cls from './ErrorBoundary.module.scss'
 interface ErrorBoundaryProps {
     children: ReactNode;
 }
@@ -28,8 +28,8 @@ class ErrorBoundary
         const { children } = this.props;
         if (hasError) {
             return (
-                <p>
-                    error was handled please reload page
+                <p className={cls.errorP}>
+                    Error was handled please reload page
                 </p>
             );
         }

@@ -20,10 +20,11 @@
 
 .div {
     width: 100%;
+    @include flexCenter;
 }
 
 .introductionText {
-    width: 100%;
+    width: 90%;
     font-style: normal;
     font-weight: var(--font-weight-s);
     font-size: var(--font-size-l);
@@ -79,7 +80,7 @@
     margin-top: 66px;
 }
 
-.bgLine1{
+.bgLine1 {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -87,10 +88,37 @@
     left: 0;
 }
 
-.bgLine2{
+.bgLine2 {
     width: 100%;
     height: 100%;
     position: absolute;
     top: 0;
     left: 0;
+}
+
+@media (max-width:768px) {
+    .dive {
+        display: none;
+    }
+
+    .section {
+        flex-direction: column;
+    }
+
+    .btnArr {
+        justify-content: center
+    }
+
+    .div,
+    .img1 {
+        margin: 0 auto;
+    }
+
+    p {
+        font-size: var(--font-size-s);
+    }
+
+    .btnArr {
+        margin-top: 30px;
+    }
 }

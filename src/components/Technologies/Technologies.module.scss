@@ -43,14 +43,23 @@
     background: var(--bg-linear-gradient);
 }
 
-.hydraTechsSection{
+.hydraTechsSection {
     width: 100%;
     display: flex;
     justify-content: space-around;
 }
 
-.hydraTechImgs{
-    width: 15%;
-    height: 15%;
-    margin-top: 25px;
+@media (max-width:768px) {
+    .arrowImg {
+        display: none;
+    }
+
+    .technologiesTitle {
+        font-size: var(--font-size-l);
+    }
+
+    .technologiesSubtitle {
+        font-size: var(--font-size-xl);
+
+    }
 }

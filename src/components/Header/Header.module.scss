@@ -13,12 +13,12 @@
     align-items: center;
 }
 
-@media (min-width: 481px) and (max-width: 1024px) {
+@media (max-width: 768px) {
     .icons {
         flex-direction: column;
     }
 
     .buttons {
-        flex-direction: row;
+        display: none;
     }
 }

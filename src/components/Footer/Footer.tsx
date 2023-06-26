@@ -18,7 +18,7 @@ const Footer = () => {
       <article className={cls.footerArticle}>
         <Frame className={cls.footerSection} />
 
-        <Vector />
+        <Vector className={cls.vector}/>
 
         <section className={cls.footerSection}>
           <nav className={cls.Navbar}>
@@ -30,7 +30,7 @@ const Footer = () => {
           </nav>
         </section>
 
-        <Vector />
+        <Vector className={cls.vector}/>
 
         <section className={cls.footerSection}>
           <nav className={cls.Navbar}>
@@ -42,10 +42,10 @@ const Footer = () => {
           </nav>
         </section>
 
-        <Vector />
+        <Vector className={cls.vector}/>
 
         <section className={cls.footerSection}>
-          <p className={cls.footerP}>SOCIALIZE WITH HYDRA</p>
+          <p className={cls.footerSocialize}>SOCIALIZE WITH HYDRA</p>
           <div className={cls.footerDiv}>
             {FOOTER_ICONS.map(({ component: IconComponent, key }) => (
               <IconComponent className={cls.icons} key={key} />

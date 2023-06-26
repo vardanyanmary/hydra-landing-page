@@ -18,7 +18,7 @@ const IntroWhyHowSections: React.FC<SectionProps> = ({data: { title, subtitle, c
           <p className={cls.pTitle}>{title}</p>
           <p className={cls.pSubtitle}>{subtitle}</p>
         </div>
-        <img src={longArrow} alt="arrow" />
+        <img src={longArrow} alt="arrow" className={cls.arrow}/>
       </div>
       <p className={cls.pContent}>{content}</p>
     </section>

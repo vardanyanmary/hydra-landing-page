@@ -21,7 +21,11 @@
     position: relative;
 }
 
-.vectors{
+.sections2 {
+    background-image: url("../../shared/assets/Vector1.svg")/url("../../shared/assets/Vector2.svg")/url("../../shared/assets/Vector3.svg")/url("../../shared/assets/Vector4.svg");
+}
+
+.vectors {
     width: 27%;
     height: 100%;
     position: absolute;
@@ -29,7 +33,7 @@
     left: 50%;
 }
 
-.vectors1{
+.vectors1 {
     width: 30%;
     height: 100%;
     position: absolute;
@@ -42,7 +46,8 @@
     height: 100%;
 }
 
-.sections {
+.sections,
+.sections2 {
     width: 100%;
     font-style: normal;
     font-weight: var(--font-weight-s);
@@ -77,7 +82,46 @@
         background-clip: text;
         text-fill-color: transparent;
     }
-    .virtualReality{
+
+    .virtualReality {
         margin: 0;
+    }
+}
+
+@media (max-width:768px) {
+
+    .arrow {
+        display: none;
+    }
+
+    .VRp {
+        display: none;
+    }
+
+    .img {
+        @include flexCenter;
+        margin: 0 auto;
+    }
+
+    .btnArr {
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .article {
+        flex-direction: column-reverse;
+    }
+
+    .dive {
+        text-align: center;
+    }
+
+    .virtualReality {
+        font-size: var(--font-size-xl);
+    }
+
+    .span {
+        font-size: var(--font-size-xxl);
+        ;
     }
 }

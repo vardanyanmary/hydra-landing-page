@@ -1,6 +1,26 @@
 import cls from "./Technologies.module.scss";
 import downArrow from "../../shared/assets/chevron-small-down.svg";
 import { HYDRA_TECH } from "../../constants/hydraTechs";
+import SwiperComponent from "../../shared/ui/Swiper/Swiper";
+import TechnologyItem from "../TechnologyItem/TechnologyItem";
+import { SwiperOptions } from "swiper";
+
+const breakPoints: SwiperOptions["breakpoints"] = {
+  640: {
+    slidesPerView: 1,
+    centeredSlides: true,
+  },
+  768: {
+    slidesPerView: 2,
+    centeredSlides: false,
+  },
+  1024: {
+    slidesPerView: 3,
+  },
+  1280: {
+    slidesPerView: 4,
+  },
+};
 
 const Technologies = () => {
   return (
@@ -14,14 +34,11 @@ const Technologies = () => {
       </section>
 
       <section className={cls.hydraTechsSection}>
-        {HYDRA_TECH.map((item, index) => (
-          <img
-            key={index}
-            src={item.icon}
-            alt={item.alt}
-            className={cls.hydraTechImgs}
-          />
-        ))}
+        <SwiperComponent
+          data={HYDRA_TECH}
+          component={TechnologyItem}
+          breakPoints={breakPoints}
+        />
       </section>
     </article>
   );

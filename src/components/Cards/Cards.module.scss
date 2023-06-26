@@ -46,3 +46,9 @@
 .btnTry{
     @include justifyCenter;
 }
+
+@media (max-width: 768px) {
+    .cardsSection{
+        display: none;
+    }
+}
