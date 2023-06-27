@@ -1,22 +1,34 @@
 import { CONTACT_DATA } from "../../constants/contactData";
+import SwiperComponent from "../../shared/ui/Swiper/Swiper";
+import { SwiperOptions } from "swiper";
 import cls from "./PayGiveCall.module.scss";
+import PayGiveCallItem from "../PayGiveCallItem/PayGiveCallItem";
+
+const breakPoints: SwiperOptions["breakpoints"] = {
+  640: {
+    slidesPerView: 1,
+    centeredSlides: true,
+  },
+  768: {
+    slidesPerView: 2,
+    centeredSlides: false,
+  },
+  1024: {
+    slidesPerView: 3,
+  },
+  1280: {
+    slidesPerView: 3,
+  },
+};
 
 const PayGiveCall = () => {
   return (
     <article className={cls.PGC}>
-      
-      {CONTACT_DATA.map((data, index) => (
-        <section className={cls.payGive} key={index}>
-          <img src={data.icon} alt="icon" />
-          <div className={cls.Texts}>
-            <p className={cls.TextsP1}>{data.title}</p>
-            <p className={cls.TextsP2}>{data.description}</p>
-          </div>
-          {index !== CONTACT_DATA.length - 1 && (
-            <div className={cls.lines}></div>
-          )}
-        </section>
-      ))}
+      <SwiperComponent
+        data={CONTACT_DATA}
+        component={PayGiveCallItem}
+        breakPoints={breakPoints}
+      />
     </article>
   );
 };

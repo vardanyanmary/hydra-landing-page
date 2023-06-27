@@ -3,13 +3,13 @@ import React, { useRef, ReactNode } from "react";
 import SwiperCore, { Navigation, Pagination, SwiperOptions } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 import cls from "./Swiper.module.scss";
 
-SwiperCore.use([Navigation, Pagination]); 
+SwiperCore.use([Navigation, Pagination]);
 
 interface SwiperProps {
   data: any;
@@ -48,6 +48,11 @@ const SwiperComponent: React.FC<SwiperProps> = ({
 
   return (
     <div className={cls.swiper}>
+      <div className={cls.swiperButtons}>
+        <button className={`${cls.btn} ${cls[prevClassName]} ${cls.leftArrow}`} onClick={goPrev}>
+          {prevSlide}
+        </button>
+      </div>
       <Swiper
         spaceBetween={20}
         breakpoints={breakPoints}
@@ -63,20 +68,11 @@ const SwiperComponent: React.FC<SwiperProps> = ({
           </SwiperSlide>
         ))}
       </Swiper>
-      {/* <div>
-        <button
-          className={`${cls.btn} ${cls[prevClassName]}`}
-          onClick={goPrev}
-        >
-          {prevSlide}
-        </button>
-        <button
-          className={`${cls.btn} ${cls[nextClassName]}`}
-          onClick={goNext}
-        >
+      <div>
+        <button className={`${cls.btn} ${cls[nextClassName]} ${cls.rightArrow}`} onClick={goNext}>
           {nextSlide}
         </button>
-      </div> */}
+      </div>
     </div>
   );
 };

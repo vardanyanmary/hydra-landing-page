@@ -1,5 +1,13 @@
-.hydraTechImgs {
+.wrapper {
     width: 252px;
     height: 252px;
-    margin-top: 25px;
+    margin: 0 auto; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hydraTechImgs {
+    width: 100%;
+    height: 100%;
 }

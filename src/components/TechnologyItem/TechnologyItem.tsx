@@ -2,14 +2,14 @@ import cls from './TechnologyItem.module.scss'
 import { FC } from 'react';
 
 type TechnologiesItemProps = {
-  id: string;
-  img: string;
+  alt: string;
+  icon: string;
 };
 
-const TechnologyItem: FC<TechnologiesItemProps> = ({ id, img }) => {
+const TechnologyItem: FC<TechnologiesItemProps> = ({ alt, icon }) => {
   return (
     <div className={cls.wrapper} >
-      <img src={img} alt="" key={id}/>
+      <img src={icon} alt={alt}/>
     </div>
   );
 };

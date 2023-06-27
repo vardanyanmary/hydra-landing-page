@@ -1,21 +1,34 @@
 import { CARDS_INFO } from "../../constants/cardsInfo";
-import Button from "../../shared/ui/Button/Button";
+import SwiperComponent from "../../shared/ui/Swiper/Swiper";
+import CardItem from "../CardItem/CardItem";
 import cls from "./Cards.module.scss";
+import { SwiperOptions } from "swiper";
+
+const breakPoints: SwiperOptions["breakpoints"] = {
+  640: {
+    slidesPerView: 1,
+    centeredSlides: true,
+  },
+  768: {
+    slidesPerView: 2,
+    centeredSlides: false,
+  },
+  1024: {
+    slidesPerView: 3,
+  },
+  1280: {
+    slidesPerView: 4,
+  },
+};
 
 const Cards = () => {
   return (
-    <section className={cls.cardsSection}>
-      {CARDS_INFO.map((data, index) => (
-        <div key={index} className={cls.cardsDiv}>
-          <img src={data.img} alt={data.imgAlt} className={cls.img} />
-          <p className={cls.cardsTitle}>{data.title}</p>
-          <div className={cls.lines}></div>
-          <p className={cls.cardsDescription}>{data.description}</p>
-          <Button state="Primary" type="button" className={cls.btnTry}>
-            TRY IT NOW
-          </Button>
-        </div>
-      ))}
+    <section>
+      <SwiperComponent
+        data={CARDS_INFO}
+        component={CardItem}
+        breakPoints={breakPoints}
+      />
     </section>
   );
 };

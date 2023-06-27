@@ -1,0 +1,39 @@
+@mixin flexCenter {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.lines {
+    width: 1px;
+    background-color: rgba(192, 183, 232, 0.33);
+    height: 100px;
+    margin-left: 45px;
+
+    @media (max-width:768px) {
+        display: none
+    }
+}
+
+.payGive {
+    @include flexCenter;
+    margin:0 auto ;
+    margin-top: 10px;
+
+    .Texts {
+        margin-left: 5px;
+        color: var(--color-linear-white);
+    }
+
+    .TextsP1 {
+        font-weight: var(--font-weight-l);
+        font-size: var(--font-size-xl);
+        margin: 0;
+    }
+
+    .TextsP2 {
+        font-weight: var(--font-weight-s);
+        font-size: var(--font-size-s);
+        margin: 0;
+    }
+}
