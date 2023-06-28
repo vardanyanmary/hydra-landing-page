@@ -10,15 +10,16 @@
     height: 100px;
     margin-left: 45px;
 
-    @media (max-width:768px) {
+    @media (max-width:1024px) {
         display: none
     }
 }
 
 .payGive {
     @include flexCenter;
-    margin:0 auto ;
     margin-top: 10px;
+    width: 100%;
+    margin: 0 auto;
 
     .Texts {
         margin-left: 5px;

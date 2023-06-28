@@ -31,6 +31,7 @@ const Steps = () => {
           data={STEPS}
           component={StepItem}
           breakPoints={breakPoints}
+
         />
       </div>
     </section>
