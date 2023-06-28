@@ -5,7 +5,8 @@ import cls from "./PayGiveCall.module.scss";
 import PayGiveCallItem from "../PayGiveCallItem/PayGiveCallItem";
 import right from "../../shared/assets/chevron-circle-right.svg";
 import left from "../../shared/assets/chevron-circle-right.svg";
-import ArrowBtn from "../ArrowBtn/ArrowBtn";
+import ArrowBtn from "../../shared/ui/ArrowBtn/ArrowBtn";
+
 
 const breakPoints: SwiperOptions["breakpoints"] = {
   640: {
@@ -33,8 +34,8 @@ const PayGiveCall = () => {
         breakPoints={breakPoints}
         nextSlide={<ArrowBtn img={right} />}
         prevSlide={<ArrowBtn img={left} />}
-        nextClassName={cls.nextSlide}
-        prevClassName={cls.prevSlide}
+        nextClassName="nextSlide"
+        prevClassName="prevSlide"
       />
     </article>
   );

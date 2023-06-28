@@ -16,7 +16,7 @@ const Header = () => {
         <Navbar />
       </section>
       <section className={cls.headerSection}>
-        <img src={burgerMenu} alt="menu" className={cls.menu} />
+        <img src={burgerMenu} alt="menu" className={cls.burgerMenu} />
         <div className={cls.buttons}>
           <Button state="Secondary" type="button">
             CONTACT US

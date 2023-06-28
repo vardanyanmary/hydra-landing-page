@@ -1,30 +1,46 @@
 .swiper {
-   width: 100%;
+   max-width: 1278px;
+   padding: 15px;
    display: flex;
    justify-content: center;
    align-items: center;
    margin: 0 auto;
-
-}
-
-.swiperButtons {
+   position: relative;
+ }
+ 
+ .btn 
+//  .btnArrow 
+ {
+   width: 100%;
    display: flex;
    justify-content: space-between;
    align-items: center;
    margin: 0 auto;
-
+   position: absolute;
+   z-index: 3;
+   // top: 40%;
+ 
    @media (min-width: 1024px) {
-      display: none;
+     display: none;
    }
-}
-
-.swiperButtonLeft {
-   margin-right: auto;
-   left: 0;
  }
  
- .swiperButtonRight {
-   margin-left: auto;
+ .prevSlide 
+//  , .prevSlideDown
+ {
+   top: 30%;
    right: 0;
+ }
+ 
+ .nextSlide
+//  .nextSlideDown 
+ {
+   top: 30%;
+   left: 0;
    transform: rotate(180deg);
  }
+
+//  .nextSlideDown,
+//   .prevSlideDown{
+//    background-color: var(--bg-color-gradient);
+//  }

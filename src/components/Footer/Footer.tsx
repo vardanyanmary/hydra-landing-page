@@ -18,7 +18,7 @@ const Footer = () => {
       <article className={cls.footerArticle}>
         <Frame className={cls.footerSection} />
 
-        <Vector className={cls.vector}/>
+        <Vector className={cls.vector} />
 
         <section className={cls.footerSection}>
           <nav className={cls.Navbar}>
@@ -30,7 +30,7 @@ const Footer = () => {
           </nav>
         </section>
 
-        <Vector className={cls.vector}/>
+        <Vector className={cls.vector} />
 
         <section className={cls.footerSection}>
           <nav className={cls.Navbar}>
@@ -42,7 +42,7 @@ const Footer = () => {
           </nav>
         </section>
 
-        <Vector className={cls.vector}/>
+        <Vector className={cls.vector} />
 
         <section className={cls.footerSection}>
           <p className={cls.footerSocialize}>SOCIALIZE WITH HYDRA</p>

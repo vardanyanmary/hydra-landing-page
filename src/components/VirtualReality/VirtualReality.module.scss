@@ -7,6 +7,7 @@
 .article {
     font-family: var(--font-family-main);
     max-width: 1278px;
+    padding: 15px;
     margin: 0 auto;
     @include flexCenter;
     flex-direction: row;

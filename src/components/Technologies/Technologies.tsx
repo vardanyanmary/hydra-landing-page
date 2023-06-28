@@ -4,6 +4,9 @@ import { HYDRA_TECH } from "../../constants/hydraTechs";
 import SwiperComponent from "../../shared/ui/Swiper/Swiper";
 import TechnologyItem from "../TechnologyItem/TechnologyItem";
 import { SwiperOptions } from "swiper";
+import right from "../../shared/assets/chevron-small-down.svg";
+import left from "../../shared/assets/chevron-small-down.svg";
+import ArrowBtn from "../../shared/ui/ArrowBtn/ArrowBtn";
 
 const breakPoints: SwiperOptions["breakpoints"] = {
   640: {
@@ -38,6 +41,10 @@ const Technologies = () => {
           data={HYDRA_TECH}
           component={TechnologyItem}
           breakPoints={breakPoints}
+          nextSlide={<ArrowBtn img={right} />}
+          prevSlide={<ArrowBtn img={left} />}
+          nextClassName="nextSlide"
+          prevClassName="prevSlide"
         />
       </section>
     </article>

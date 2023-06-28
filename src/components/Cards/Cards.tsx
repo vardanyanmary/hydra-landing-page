@@ -1,6 +1,9 @@
 import { CARDS_INFO } from "../../constants/cardsInfo";
 import SwiperComponent from "../../shared/ui/Swiper/Swiper";
+import ArrowBtn from "../../shared/ui/ArrowBtn/ArrowBtn";
 import CardItem from "../CardItem/CardItem";
+import right from "../../shared/assets/chevron-small-down.svg";
+import left from "../../shared/assets/chevron-small-down.svg";
 import cls from "./Cards.module.scss";
 import { SwiperOptions } from "swiper";
 
@@ -28,6 +31,10 @@ const Cards = () => {
         data={CARDS_INFO}
         component={CardItem}
         breakPoints={breakPoints}
+        nextSlide={<ArrowBtn img={right} />}
+        prevSlide={<ArrowBtn img={left} />}
+        nextClassName="nextSlide"
+        prevClassName="prevSlide"
       />
     </section>
   );

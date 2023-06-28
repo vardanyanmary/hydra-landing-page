@@ -42,36 +42,33 @@ const SwiperComponent: React.FC<SwiperProps> = ({
       swiper.slidePrev();
     }
   };
-    return (
-      <div className={cls.swiper}>
-        <div className={cls.swiperButtonLeft}>
-          <button className={`${cls.btn} ${cls[prevClassName]}`} onClick={goPrev}>
-            {prevSlide}
-          </button>
-        </div>
-        <Swiper
-          spaceBetween={20}
-          breakpoints={breakPoints}
-          onSwiper={(swiper) => setSwiper(swiper)}
-          navigation={{
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          }}
-        >
-          {data.map((slide: any) => (
-            <SwiperSlide className={cls[slideClassName]} key={slide.id}>
-              <Component {...slide} />
-            </SwiperSlide>
-          ))}
-        </Swiper>
-        <div className={cls.swiperButtonRight}>
-          <button className={`${cls.btn} ${cls[nextClassName]}`} onClick={goNext}>
-            {nextSlide}
-          </button>
-        </div>
+  return (
+    <div className={cls.swiper}>
+      <Swiper
+        spaceBetween={20}
+        breakpoints={breakPoints}
+        onSwiper={(swiper) => setSwiper(swiper)}
+        navigation={{
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        }}
+      >
+        {data.map((slide: any) => (
+          <SwiperSlide className={cls[slideClassName]} key={slide.id}>
+            <Component {...slide} />
+          </SwiperSlide>
+        ))}
+      </Swiper>
+      <div className={cls.btn}>
+        <button className={`${cls.btn} ${cls[prevClassName]}`} onClick={goPrev}>
+          {prevSlide}
+        </button>
+        <button className={`${cls.btn} ${cls[nextClassName]}`} onClick={goNext}>
+          {nextSlide}
+        </button>
       </div>
-    );
-    
+    </div>
+  );
 };
 
 export default SwiperComponent;
