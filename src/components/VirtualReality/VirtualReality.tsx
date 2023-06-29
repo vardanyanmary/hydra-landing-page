@@ -1,16 +1,16 @@
 import michelangelo from "../../shared/assets/pexels-michelangelo-buonarroti-8728382 1.jpg";
 import Button from "../../shared/ui/Button/Button";
 import arrow from "../../shared/assets/arrow-small-right.png";
-// import vector1 from "../../shared/assets/Vector 1.svg";
-// import vector2 from "../../shared/assets/Vector 2.svg";
-// import vector3 from "../../shared/assets/Vector 3.svg";
-// import vector4 from "../../shared/assets/Vector 4.svg";
+import vector1 from "../../shared/assets/Vector1.svg";
+import vector2 from "../../shared/assets/Vector2.svg";
+import vector3 from "../../shared/assets/Vector3.svg";
+import vector4 from "../../shared/assets/Vector4.svg";
 import cls from "./VirtualReality.module.scss";
 
 const VirtualReality = () => {
   return (
-    <article className={cls.article}>
-      <section className={cls.sections}>
+    <section className={cls.section}>
+      <div className={cls.div}>
         
         <div className={cls.dive}>
           <p className={cls.virtualReality}>
@@ -34,16 +34,16 @@ const VirtualReality = () => {
           </Button>
           <img src={arrow} alt="img" className={cls.arrow} />
         </div>
-      </section>
+      </div>
 
-      <section className={cls.sections2}>
-        {/* <img src={vector1} alt="vector1" className={cls.vectors}/>
-        <img src={vector2} alt="vector2" className={cls.vectors}/>
-        <img src={vector3} alt="vector3" className={cls.vectors1}/>
-        <img src={vector4} alt="vector4" className={cls.vectors}/>  */}
+      <div className={cls.div2}>
+        <img src={vector1} alt="vector1" className={cls.vector1}/>
+        <img src={vector2} alt="vector2" className={cls.vector2}/>
+        <img src={vector3} alt="vector3" className={cls.vector3}/>
+        <img src={vector4} alt="vector4" className={cls.vector4}/> 
         <img src={michelangelo} alt="img" className={cls.img} />
-      </section>
-    </article>
+      </div>
+    </section>
   );
 };
 
