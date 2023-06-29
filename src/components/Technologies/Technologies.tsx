@@ -2,7 +2,7 @@ import cls from "./Technologies.module.scss";
 import downArrow from "../../shared/assets/chevron-small-down.svg";
 import { HYDRA_TECH } from "../../constants/hydraTechs";
 import SwiperComponent from "../../shared/ui/Swiper/Swiper";
-import TechnologyItem from "../TechnologyItem/TechnologyItem";
+import TechnologyItem from "./TechnologyItem/TechnologyItem";
 import { SwiperOptions } from "swiper";
 import right from "../../shared/assets/chevron-small-down.svg";
 import left from "../../shared/assets/chevron-small-down.svg";
@@ -43,8 +43,8 @@ const Technologies = () => {
           breakPoints={breakPoints}
           nextSlide={<ArrowBtn img={right} />}
           prevSlide={<ArrowBtn img={left} />}
-          nextClassName="nextSlide"
-          prevClassName="prevSlide"
+          nextClassName="nextIcon"
+          prevClassName="prevIcon"
         />
       </section>
     </article>

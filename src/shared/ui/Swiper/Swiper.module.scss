@@ -1,46 +1,108 @@
 .swiper {
-   max-width: 1278px;
-   padding: 15px;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   margin: 0 auto;
-   position: relative;
- }
- 
- .btn 
-//  .btnArrow 
- {
-   width: 100%;
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   margin: 0 auto;
-   position: absolute;
-   z-index: 3;
-   // top: 40%;
- 
-   @media (min-width: 1024px) {
-     display: none;
-   }
- }
- 
- .prevSlide 
-//  , .prevSlideDown
- {
-   top: 30%;
-   right: 0;
- }
- 
- .nextSlide
-//  .nextSlideDown 
- {
-   top: 30%;
-   left: 0;
-   transform: rotate(180deg);
- }
+  max-width: 1278px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  position: relative;
+}
 
-//  .nextSlideDown,
-//   .prevSlideDown{
-//    background-color: var(--bg-color-gradient);
-//  }
+.btn {
+  max-width: 59px;
+  max-height: 59px;
+  width: 100%;
+  height: 100%;
+  margin-left: 5px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  position: absolute;
+  z-index: 5;
+
+  @media (min-width: 1278px) {
+    display: none;
+  }
+}
+
+.nextSlide {
+  top: 13%;
+  right: 0;
+  transform: rotate(180deg);
+
+  @media (min-width: 1024px) {
+    display: none;
+  }
+}
+
+.prevSlide {
+  top: 7%;
+  left: -20%;
+
+  @media (min-width: 1024px) {
+    display: none;
+
+  }
+}
+
+@media (min-width: 1024px) {
+
+  .nextSlide,
+  .nextSlide {
+    display: none;
+  }
+}
+
+
+.prevIcon {
+  top: 10%;
+  left: 0;
+  transform: rotate(90deg);
+}
+
+.nextIcon {
+  top: 40%;
+  right: 0;
+  transform: rotate(-90deg);
+
+}
+
+.nextIcon,
+.prevIcon {
+  background: var(--button-bg-gradient);
+}
+
+.prevCard {
+  top: 50%;
+  left: -20%;
+  transform: rotate(90deg);
+}
+
+.nextCard {
+  top: 50%;
+  right: -2%;
+  transform: rotate(-90deg);
+}
+
+.prevCard,
+.nextCard {
+  background: var(--button-bg-gradient);
+}
+
+
+.prevStep {
+  top: 0;
+  left: -20%;
+  transform: rotate(90deg);
+}
+
+.nextStep {
+  top: 30%;
+  right: -1%;
+  transform: rotate(-90deg);
+}
+
+.prevStep,
+.nextStep {
+  background: var(--button-bg-gradient);
+}

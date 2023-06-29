@@ -1,6 +1,6 @@
 import cls from "./Button.module.scss";
 import { classNames } from "../../lib/classNames/classNames";
-import "@fontsource/montserrat/400.css";
+
 
 type ButtonProps = {
   className?: string;

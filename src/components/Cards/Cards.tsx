@@ -1,7 +1,7 @@
 import { CARDS_INFO } from "../../constants/cardsInfo";
 import SwiperComponent from "../../shared/ui/Swiper/Swiper";
 import ArrowBtn from "../../shared/ui/ArrowBtn/ArrowBtn";
-import CardItem from "../CardItem/CardItem";
+import CardItem from "./CardItem/CardItem";
 import right from "../../shared/assets/chevron-small-down.svg";
 import left from "../../shared/assets/chevron-small-down.svg";
 import cls from "./Cards.module.scss";
@@ -23,7 +23,7 @@ const breakPoints: SwiperOptions["breakpoints"] = {
     slidesPerView: 4,
   },
 };
-
+ 
 const Cards = () => {
   return (
     <section>
@@ -33,8 +33,8 @@ const Cards = () => {
         breakPoints={breakPoints}
         nextSlide={<ArrowBtn img={right} />}
         prevSlide={<ArrowBtn img={left} />}
-        nextClassName="nextSlide"
-        prevClassName="prevSlide"
+        nextClassName="nextCard"
+        prevClassName="prevCard"
       />
     </section>
   );

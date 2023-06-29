@@ -7,6 +7,7 @@ import Technologies from "../Technologies/Technologies";
 import How from "../How/How";
 import Steps from "../Steps/Steps";
 import Join from "../Join/Join";
+import "@fontsource/montserrat/400.css";
 
 const Main = () => {
   return (

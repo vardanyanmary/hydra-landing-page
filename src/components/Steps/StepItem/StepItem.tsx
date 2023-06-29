@@ -1,5 +1,5 @@
 import cls from "./StepItem.module.scss";
-import arrow from "../../shared/assets/arrow-small-right.png";
+import arrow from "../../../shared/assets/arrow-small-right.png";
 import { FC } from "react";
 
 type StepItemProps = {
@@ -11,9 +11,9 @@ type StepItemProps = {
 const StepItem: FC<StepItemProps> = ({ id, number, text }) => {
   return (
     <div className={cls.stepsDivMap}>
-      <span key={id} className={cls.stepsNumber}>
+      <div key={id} className={cls.stepsNumber}>
         {number}
-      </span>
+      </div>
       <p className={cls.stepsP}>
         <img src={arrow} alt="img" className={cls.arrow} />
         {text}

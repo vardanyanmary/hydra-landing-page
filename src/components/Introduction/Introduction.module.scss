@@ -33,9 +33,12 @@
 }
 
 .img1 {
-    width: 90%;
-    height: 90%;
+    max-width: 546px;
+    max-height: 819px;
+    width: 100%;
+    height: 100%;
     background: rgba(0, 0, 0, 0.13);
+    margin-right: 10px;
     filter: var(--drop-shadow);
     border-radius: var(--border-radius-shvets);
     transform: matrix(-1, 0, 0, 1, 0, 0);
@@ -58,6 +61,10 @@
 
     .virtualVR {
         margin: 0;
+    }
+
+    .diveP{
+        width: 100%;
     }
 }
 
@@ -120,5 +127,14 @@
 
     .btnArr {
         margin-top: 30px;
+    }
+
+    .bgLine1,
+    .bgLine2 {
+        display: none;
+    }
+
+    .img1{
+        border-radius: var(--border-radius-shvets);
     }
 }

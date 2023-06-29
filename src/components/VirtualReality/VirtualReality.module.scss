@@ -15,8 +15,10 @@
 }
 
 .img {
-    width: 90%;
-    height: 90%;
+    max-width: 554px;
+    max-height: 831px;
+    width: 100%;
+    height: 100%;
     background: rgba(0, 0, 0, 0.13);
     filter: var(--drop-shadow);
     border-radius: var(--border-radius);
@@ -116,6 +118,8 @@
     .img {
         @include flexCenter;
         margin: 0 auto;
+        width: 100%;
+        height: 100%;
     }
 
     .btnArr {

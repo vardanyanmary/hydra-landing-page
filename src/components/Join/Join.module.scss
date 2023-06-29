@@ -10,7 +10,6 @@
         border-radius: 40px;
         padding: 15px;
         margin: 0 auto;
-        border-radius: 100px;
         background: var(--join-bg-color-gradient);
         border-radius: var(--border-radius-join);
 
@@ -77,16 +76,21 @@
     }
 }
 
-.textarea {
-    height: 70%;
+.textArea {
+    height: 80%;
     margin-bottom: 20%;
 }
 
 @media (max-width: 768px) {
 
-    // 
     .form .inputArea,
     .form .textArea {
         grid-column: span 2 !important;
     }
+
+    .textArea {
+        height: 70%;
+        margin-bottom: 20%;
+    }
+
 }

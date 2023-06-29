@@ -23,7 +23,7 @@ const Introduction = () => {
             <p className={cls.sectionTitle}>ABOUT </p>
             <span className={cls.sectionSubtitle}> HYDRA VR </span>
           </div>
-          <p>
+          <p className={cls.diveP}>
             Eget mi proin sed libero enim sed faucibus turpis. Nisl rhoncus
             mattis rhoncus urna neque viverra justo. Vivamus at augue eget arcu
             dictum. Ultrices gravida dictum fusce ut placerat orci. Aenean et

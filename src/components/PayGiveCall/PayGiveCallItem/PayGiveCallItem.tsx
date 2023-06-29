@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { CONTACT_DATA } from "../../constants/contactData";
+import { CONTACT_DATA } from "../../../constants/contactData";
 import cls from "./PayGiveCallItem.module.scss";
 
 type PayGiveCallItemProps = {

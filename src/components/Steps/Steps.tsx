@@ -3,7 +3,7 @@ import steps_bg from "../../shared/assets/steps_bg.svg";
 import SwiperComponent from "../../shared/ui/Swiper/Swiper";
 import { SwiperOptions } from "swiper";
 import cls from "./Steps.module.scss";
-import StepItem from "../StepItem/StepItem";
+import StepItem from "./StepItem/StepItem";
 import right from "../../shared/assets/chevron-small-down.svg";
 import left from "../../shared/assets/chevron-small-down.svg";
 import ArrowBtn from "../../shared/ui/ArrowBtn/ArrowBtn";
@@ -36,8 +36,8 @@ const Steps = () => {
           breakPoints={breakPoints}
           nextSlide={<ArrowBtn img={right} />}
           prevSlide={<ArrowBtn img={left} />}
-          nextClassName="nextSlide"
-          prevClassName="prevSlide"
+          nextClassName="nextStep"
+          prevClassName="prevStep"
         />
       </div>
     </section>

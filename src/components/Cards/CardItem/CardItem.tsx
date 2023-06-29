@@ -1,5 +1,5 @@
 import { FC } from "react";
-import Button from "../../shared/ui/Button/Button";
+import Button from "../../../shared/ui/Button/Button";
 import cls from "./CardItem.module.scss";
 
 type CardItemProps = {
@@ -14,7 +14,7 @@ const CardItem: FC<CardItemProps> = ({
   img,
   id,
   imgAlt,
-  description,
+  description, 
   title,
 }) => {
   return (

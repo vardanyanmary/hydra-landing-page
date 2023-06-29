@@ -2,7 +2,7 @@ import { CONTACT_DATA } from "../../constants/contactData";
 import SwiperComponent from "../../shared/ui/Swiper/Swiper";
 import { SwiperOptions } from "swiper";
 import cls from "./PayGiveCall.module.scss";
-import PayGiveCallItem from "../PayGiveCallItem/PayGiveCallItem";
+import PayGiveCallItem from "./PayGiveCallItem/PayGiveCallItem";
 import right from "../../shared/assets/chevron-circle-right.svg";
 import left from "../../shared/assets/chevron-circle-right.svg";
 import ArrowBtn from "../../shared/ui/ArrowBtn/ArrowBtn";
@@ -19,10 +19,7 @@ const breakPoints: SwiperOptions["breakpoints"] = {
   },
   1024: {
     slidesPerView: 3,
-  },
-  1280: {
-    slidesPerView: 3,
-  },
+  }
 };
 
 const PayGiveCall = () => {

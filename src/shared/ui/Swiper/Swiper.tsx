@@ -44,6 +44,11 @@ const SwiperComponent: React.FC<SwiperProps> = ({
   };
   return (
     <div className={cls.swiper}>
+      <div className={cls.btn}>
+        <button className={`${cls.btn} ${cls[prevClassName]}`} onClick={goPrev}>
+          {prevSlide}
+        </button>
+      </div>
       <Swiper
         spaceBetween={20}
         breakpoints={breakPoints}
@@ -59,10 +64,7 @@ const SwiperComponent: React.FC<SwiperProps> = ({
           </SwiperSlide>
         ))}
       </Swiper>
-      <div className={cls.btn}>
-        <button className={`${cls.btn} ${cls[prevClassName]}`} onClick={goPrev}>
-          {prevSlide}
-        </button>
+      <div>
         <button className={`${cls.btn} ${cls[nextClassName]}`} onClick={goNext}>
           {nextSlide}
         </button>
