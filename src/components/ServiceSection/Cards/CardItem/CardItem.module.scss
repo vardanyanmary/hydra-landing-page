@@ -6,9 +6,8 @@
 } 
 
 .cardsDiv {
-    max-width: 1278px;
+    max-width: 310px;
     width: 100%;
-    margin-left: 5px;
     border-radius: var(--border-radius-radial);
     background: var(--bg-radial-gradient);
     @include justifyCenter;

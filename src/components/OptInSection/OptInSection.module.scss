@@ -1,6 +1,9 @@
 .wrapper {
-    margin-top: 25px;
+    margin: 0;
+    max-width: 1278px;
+    margin: 0 auto;
     color: var(--color-linear-white);
+    font-family: var(--font-family-main);
 
     .constactUsContainer {
         display: flex;

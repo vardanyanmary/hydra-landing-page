@@ -5,10 +5,11 @@ import SwiperComponent from "../../../shared/ui/Swiper/Swiper";
 import { CARDS_INFO } from "../../../constants/cardsInfo";
 import { BREAKPOINTS } from "../../../constants/breakpoints";
 import ArrowBtn from "../../../shared/ui/ArrowBtn/ArrowBtn";
+import cls from './Cards.module.scss'
 
- 
 const Cards = () => {
   return (
+    <section className={cls.cards}>
       <SwiperComponent
         data={CARDS_INFO}
         component={CardItem}
@@ -18,6 +19,7 @@ const Cards = () => {
         nextClassName="nextCard"
         prevClassName="prevCard"
       />
+    </section>
   );
 };
 
