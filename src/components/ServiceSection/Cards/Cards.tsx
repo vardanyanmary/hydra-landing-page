@@ -1,6 +1,6 @@
 import CardItem from "./CardItem/CardItem";
-import right from "../../shared/assets/chevron-small-down.svg";
-import left from "../../shared/assets/chevron-small-down.svg";
+import right from "../../../shared/assets/chevron-small-down.svg";
+import left from "../../../shared/assets/chevron-small-down.svg";
 import SwiperComponent from "../../../shared/ui/Swiper/Swiper";
 import { CARDS_INFO } from "../../../constants/cardsInfo";
 import { BREAKPOINTS } from "../../../constants/breakpoints";

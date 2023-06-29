@@ -2,7 +2,7 @@ import vector1 from "../shared/assets/Vector1.svg";
 import vector2 from "../shared/assets/Vector2.svg";
 import vector3 from "../shared/assets/Vector3.svg";
 import vector4 from "../shared/assets/Vector4.svg";
-import cls from '../../src/components/VirtualReality/VirtualReality.module.scss'
+import cls from '../components/HeroSection/VirtualReality/VirtualReality.module.scss'
 
 export const IMG_CONFIGS = [
     {

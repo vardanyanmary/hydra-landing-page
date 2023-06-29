@@ -1,6 +1,6 @@
-import { ReactComponent as Frame } from "../../shared/assets/Frame.svg";
-import { ReactComponent as Group } from "../../shared/assets/Group.svg";
-import burgerMenu from "../../shared/assets/Hamburger-Button.svg";
+import { ReactComponent as Frame } from "../../../shared/assets/Frame.svg";
+import { ReactComponent as Group } from "../../../shared/assets/Group.svg";
+import burgerMenu from "../../../shared/assets/Hamburger-Button.svg";
 import Navbar from "./Navbar/Navbar";
 import Button from "../../../shared/ui/Button/Button";
 import cls from "./Header.module.scss";

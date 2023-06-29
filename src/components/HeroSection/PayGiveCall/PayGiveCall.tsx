@@ -1,7 +1,6 @@
-
 import PayGiveCallItem from "./PayGiveCallItem/PayGiveCallItem";
-import right from "../../shared/assets/chevron-circle-right.svg";
-import left from "../../shared/assets/chevron-circle-right.svg";
+import right from "../../../shared/assets/chevron-circle-right.svg";
+import left from "../../../shared/assets/chevron-circle-right.svg";
 import SwiperComponent from "../../../shared/ui/Swiper/Swiper";
 import { CONTACT_DATA } from "../../../constants/contactData";
 import { BREAKPOINTS_PAY } from "../../../constants/breakpoints";

@@ -1,4 +1,4 @@
-import arrow from "../../../shared/assets/arrow-small-right.png";
+import arrow from "../../../../shared/assets/arrow-small-right.png";
 import { FC } from "react";
 import cls from "./StepItem.module.scss";
 

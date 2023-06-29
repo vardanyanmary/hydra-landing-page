@@ -1,6 +1,6 @@
-import michelangelo from "../../shared/assets/pexels-michelangelo-buonarroti-8728382 1.jpg";
+import michelangelo from "../../../shared/assets/pexels-michelangelo-buonarroti-8728382 1.jpg";
 import Button from "../../../shared/ui/Button/Button";
-import arrow from "../../shared/assets/arrow-small-right.png";
+import arrow from "../../../shared/assets/arrow-small-right.png";
 import cls from "./VirtualReality.module.scss";
 import { IMG_CONFIGS } from "../../../constants/imgConfigs";
 
