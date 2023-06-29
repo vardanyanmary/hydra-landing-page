@@ -1,13 +1,22 @@
-import Footer from "./components/Footer/Footer";
-import Header from "./components/Header/Header";
-import Main from "./components/Main/Main";
+import "@fontsource/montserrat/400.css";
+import HeroSection from "./components/HeroSection/HeroSection";
+import AboutSection from "./components/AboutSection/AboutSection";
+import ServiceSection from "./components/ServiceSection/ServiceSection";
+import TechSection from "./components/TechSection/TechSection";
+import ProcessSection from "./components/ProcessSection/ProcessSection";
+import OptInSection from "./components/OptInSection/OptInSection";
+import FooterSection from "./components/FooterSection/FooterSection";
 
 const App = () => {
   return (
     <div>
-      <Header />
-      <Main />
-      <Footer />
+      <HeroSection />
+      <AboutSection />
+      <ServiceSection />
+      <TechSection />
+      <ProcessSection />
+      <OptInSection />
+      <FooterSection />
     </div>
   );
 };

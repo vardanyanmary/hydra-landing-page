@@ -8,8 +8,8 @@
 }
 
 .btn {
-  max-width: 59px;
-  max-height: 59px;
+  max-width: 38px;
+  max-height: 38px;
   width: 100%;
   height: 100%;
   margin-left: 5px;
@@ -26,8 +26,8 @@
 }
 
 .nextSlide {
-  top: 13%;
-  right: 0;
+  top: 30%;
+  right:0;
   transform: rotate(180deg);
 
   @media (min-width: 1024px) {
@@ -37,7 +37,7 @@
 
 .prevSlide {
   top: 7%;
-  left: -20%;
+  left: -55%;
 
   @media (min-width: 1024px) {
     display: none;
@@ -56,12 +56,12 @@
 
 .prevIcon {
   top: 10%;
-  left: 0;
+  left: -20%;
   transform: rotate(90deg);
 }
 
 .nextIcon {
-  top: 40%;
+  top: 44%;
   right: 0;
   transform: rotate(-90deg);
 
@@ -74,13 +74,13 @@
 
 .prevCard {
   top: 50%;
-  left: -20%;
+  left: -10%;
   transform: rotate(90deg);
 }
 
 .nextCard {
-  top: 50%;
-  right: -2%;
+  top: 52%;
+  right: 0;
   transform: rotate(-90deg);
 }
 
@@ -97,8 +97,8 @@
 }
 
 .nextStep {
-  top: 30%;
-  right: -1%;
+  top: 41%;
+  right: 0;
   transform: rotate(-90deg);
 }
 

@@ -1,6 +1,5 @@
 import cls from "./Button.module.scss";
-import { classNames } from "../../lib/classNames/classNames";
-
+// import { classNames } from "../../lib/classNames/classNames";
 
 type ButtonProps = {
   className?: string;
@@ -20,7 +19,7 @@ const Button: React.FC<ButtonProps> = ({
   const buttonClassNames = [cls[`Button--${state}`]];
   return (
     <button
-      className={classNames(buttonClassNames.join(" "), {}, [className])}
+      className={`button ${buttonClassNames.join(" ")} ${className}`}
       type={type}
       onClick={onClick}
     >

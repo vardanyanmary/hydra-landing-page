@@ -1,0 +1,33 @@
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.stepsNumber {
+    width: 159px ;
+    height: 159px ;
+    @include flexCenter;
+    font-size: var(--font-size-3xl);
+    font-weight: var(--font-weight-m);
+    background: var(--bg-number-linear-gradient);
+    border-radius: 50%;
+    position: relative;
+}
+
+.stepsP {
+    width: 100%;
+    @include flexCenter;
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-m);
+    color: var(--color-linear-white);
+    position: relative;
+}
+
+.stepsDivMap {
+    position: relative;
+    width: 80%;
+    @include flexCenter;
+    flex-direction: column;
+}

@@ -58,8 +58,8 @@ const SwiperComponent: React.FC<SwiperProps> = ({
           prevEl: ".swiper-button-prev",
         }}
       >
-        {data.map((slide: any) => (
-          <SwiperSlide className={cls[slideClassName]} key={slide.id}>
+        {data.map((slide: any , id:number) => (
+          <SwiperSlide className={cls[slideClassName]} key={id}>
             <Component {...slide} />
           </SwiperSlide>
         ))}

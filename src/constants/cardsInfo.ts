@@ -5,6 +5,7 @@ import mali from "../shared/assets/pexels-mali-maeder-756439 1.svg";
 
 export const CARDS_INFO = [
   {
+    id:1,
     img: shvets,
     imgAlt: "shvets alt",
     title: "SIMULATION",
@@ -12,6 +13,7 @@ export const CARDS_INFO = [
       "Vitae sapien pellentesque habitant morbi nunc. Viverra aliquetporttitor rhoncus libero justo laoreet sit amet vitae.",
   },
   {
+    id:2,
     img: mikhail,
     imgAlt: "mikhail alt",
     title: "EDUCATION",
@@ -19,6 +21,7 @@ export const CARDS_INFO = [
       "Vitae sapien pellentesque habitant morbi nunc. Viverra aliquetporttitor rhoncus libero justo laoreet sit amet vitae.",
   },
   {
+    id:3,
     img: rodnae,
     imgAlt: "rodnae alt",
     title: "SELF-CARE",
@@ -26,6 +29,7 @@ export const CARDS_INFO = [
       "Vitae sapien pellentesque habitant morbi nunc. Viverra aliquetporttitor rhoncus libero justo laoreet sit amet vitae.",
   },
   {
+    id:4,
     img: mali,
     imgAlt: "mali alt",
     title: "OUTDOOR",

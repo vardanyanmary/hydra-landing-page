@@ -21,10 +21,34 @@ export const FOOTER_INFO_COLUMN = [
 ];
 
 export const FOOTER_ICONS = [
-  { component: Facebook, key: "facebook" },
-  { component: Twitter, key: "twitter" },
-  { component: Linkedin, key: "linkedin" },
-  { component: YouTube, key: "youtube" },
-  { component: Instagram, key: "instagram" },
-  { component: Pinterest, key: "pinterest" },
+  {
+    id: 1,
+    component: Facebook,
+    key: "facebook",
+  },
+  {
+    id: 2,
+    component: Twitter,
+    key: "twitter",
+  },
+  {
+    id: 3,
+    component: Linkedin,
+    key: "linkedin",
+  },
+  {
+    id: 4,
+    component: YouTube,
+    key: "youtube",
+  },
+  {
+    id: 5,
+    component: Instagram,
+    key: "instagram",
+  },
+  {
+    id: 6,
+    component: Pinterest,
+    key: "pinterest",
+  },
 ];
