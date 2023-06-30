@@ -27,7 +27,7 @@
 
 .nextSlide {
   top: 30%;
-  right:0;
+  right:-4%;
   transform: rotate(180deg);
 
   @media (min-width: 1024px) {
@@ -38,7 +38,6 @@
 .prevSlide {
   top: 7%;
   left: -55%;
-
   @media (min-width: 1024px) {
     display: none;
 
@@ -73,14 +72,14 @@
 }
 
 .prevCard {
-  top: 50%;
-  left: -10%;
+  top: 60%;
+  left: 2%;
   transform: rotate(90deg);
 }
 
 .nextCard {
-  top: 52%;
-  right: 0;
+  top: 50%;
+  right: 1.5%;
   transform: rotate(-90deg);
 }
 
@@ -97,7 +96,7 @@
 }
 
 .nextStep {
-  top: 41%;
+  top: 42%;
   right: 0;
   transform: rotate(-90deg);
 }
